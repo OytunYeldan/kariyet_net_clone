@@ -34,133 +34,216 @@
 27-->/Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:42:13-50
 27-->/Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:42:19-48
 28        </intent>
-29    </queries>
-30
-31    <permission
-31-->[androidx.core:core:1.13.1] /Users/oytun/.gradle/caches/8.10.2/transforms/8fab08a6f6e27ebe9881e5845ef81bc7/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-32        android:name="com.oytun.kariyer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.13.1] /Users/oytun/.gradle/caches/8.10.2/transforms/8fab08a6f6e27ebe9881e5845ef81bc7/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.13.1] /Users/oytun/.gradle/caches/8.10.2/transforms/8fab08a6f6e27ebe9881e5845ef81bc7/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-34
-35    <uses-permission android:name="com.oytun.kariyer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.13.1] /Users/oytun/.gradle/caches/8.10.2/transforms/8fab08a6f6e27ebe9881e5845ef81bc7/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.13.1] /Users/oytun/.gradle/caches/8.10.2/transforms/8fab08a6f6e27ebe9881e5845ef81bc7/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+29        <!-- Needs to be explicitly declared on Android R+ -->
+30        <package android:name="com.google.android.apps.maps" />
+30-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+30-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+33-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-81
+33-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-78
+34    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+34-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-79
+34-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-76
+35    <uses-permission android:name="android.permission.CALL_PHONE" />
+35-->[:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-69
+35-->[:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-66
 36
-37    <application
-38        android:name="android.app.Application"
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.13.1] /Users/oytun/.gradle/caches/8.10.2/transforms/8fab08a6f6e27ebe9881e5845ef81bc7/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-40        android:debuggable="true"
-41        android:extractNativeLibs="true"
-42        android:icon="@mipmap/ic_launcher"
-43        android:label="kariyer" >
-44        <activity
-45            android:name="com.oytun.kariyer.MainActivity"
-46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-47            android:exported="true"
-48            android:hardwareAccelerated="true"
-49            android:launchMode="singleTop"
-50            android:taskAffinity=""
-51            android:theme="@style/LaunchTheme"
-52            android:windowSoftInputMode="adjustResize" >
-53
-54            <!--
-55                 Specifies an Android theme to apply to this Activity as soon as
-56                 the Android process has started. This theme is visible to the user
-57                 while the Flutter UI initializes. After that, this theme continues
-58                 to determine the Window background behind the Flutter UI.
-59            -->
-60            <meta-data
-61                android:name="io.flutter.embedding.android.NormalTheme"
-62                android:resource="@style/NormalTheme" />
-63
-64            <intent-filter>
-65                <action android:name="android.intent.action.MAIN" />
-66
-67                <category android:name="android.intent.category.LAUNCHER" />
-68            </intent-filter>
-69        </activity>
-70        <!--
-71             Don't delete the meta-data below.
-72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-73        -->
-74        <meta-data
-75            android:name="flutterEmbedding"
-76            android:value="2" />
-77
-78        <uses-library
-78-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-79            android:name="androidx.window.extensions"
-79-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-80            android:required="false" />
-80-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-81        <uses-library
-81-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-82            android:name="androidx.window.sidecar"
-82-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-83            android:required="false" />
-83-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-84
-85        <provider
-85-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-86            android:name="androidx.startup.InitializationProvider"
-86-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
-87            android:authorities="com.oytun.kariyer.androidx-startup"
-87-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
-88            android:exported="false" >
-88-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
-89            <meta-data
-89-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-90-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-91                android:value="androidx.startup" />
-91-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-92            <meta-data
-92-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-93                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-94                android:value="androidx.startup" />
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-95        </provider>
-96
-97        <receiver
-97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-98            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-99            android:directBootAware="false"
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+37    <uses-feature
+37-->[:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:5-11:36
+38        android:name="android.hardware.telephony"
+38-->[:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:9-50
+39        android:required="false" /> <!-- Include required permissions for Google Maps API to run. -->
+39-->[:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:9-33
+40    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+40-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+40-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+41
+42    <uses-feature
+42-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+43        android:glEsVersion="0x00020000"
+43-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+44        android:required="true" />
+44-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+45
+46    <permission
+46-->[androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+47        android:name="com.oytun.kariyer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+47-->[androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+48        android:protectionLevel="signature" />
+48-->[androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+49
+50    <uses-permission android:name="com.oytun.kariyer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+50-->[androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+50-->[androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+51
+52    <application
+53        android:name="android.app.Application"
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+55        android:debuggable="true"
+56        android:extractNativeLibs="true"
+57        android:icon="@mipmap/ic_launcher"
+58        android:label="kariyer" >
+59        <activity
+60            android:name="com.oytun.kariyer.MainActivity"
+61            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+62            android:exported="true"
+63            android:hardwareAccelerated="true"
+64            android:launchMode="singleTop"
+65            android:taskAffinity=""
+66            android:theme="@style/LaunchTheme"
+67            android:windowSoftInputMode="adjustResize" >
+68
+69            <!--
+70                 Specifies an Android theme to apply to this Activity as soon as
+71                 the Android process has started. This theme is visible to the user
+72                 while the Flutter UI initializes. After that, this theme continues
+73                 to determine the Window background behind the Flutter UI.
+74            -->
+75            <meta-data
+76                android:name="io.flutter.embedding.android.NormalTheme"
+77                android:resource="@style/NormalTheme" />
+78
+79            <intent-filter>
+80                <action android:name="android.intent.action.MAIN" />
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+83            </intent-filter>
+84        </activity>
+85        <!--
+86             Don't delete the meta-data below.
+87             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+88        -->
+89        <meta-data
+90            android:name="flutterEmbedding"
+91            android:value="2" />
+92
+93        <service
+93-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:9-15:56
+94            android:name="com.lyokone.location.FlutterLocationService"
+94-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-71
+95            android:enabled="true"
+95-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-35
+96            android:exported="false"
+96-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-37
+97            android:foregroundServiceType="location" />
+97-->[:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-53
+98        <service
+98-->[:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-12:56
+99            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+99-->[:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-77
 100            android:enabled="true"
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-101            android:exported="true"
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-102            android:permission="android.permission.DUMP" >
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-103            <intent-filter>
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-104                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-105            </intent-filter>
-106            <intent-filter>
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-107                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-108            </intent-filter>
-109            <intent-filter>
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-110                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-111            </intent-filter>
-112            <intent-filter>
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-113                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-114            </intent-filter>
-115        </receiver>
-116    </application>
-117
-118</manifest>
+100-->[:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-35
+101            android:exported="false"
+101-->[:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-37
+102            android:foregroundServiceType="location" />
+102-->[:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-53
+103
+104        <activity
+104-->[:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-11:74
+105            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+105-->[:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-74
+106            android:exported="false"
+106-->[:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-37
+107            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+107-->[:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-71
+108
+109        <uses-library
+109-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+110            android:name="androidx.window.extensions"
+110-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+111            android:required="false" />
+111-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+112        <uses-library
+112-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+113            android:name="androidx.window.sidecar"
+113-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+114            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+114-->[androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+115        <uses-library
+115-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+116            android:name="org.apache.http.legacy"
+116-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+117            android:required="false" />
+117-->[com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+118
+119        <activity
+119-->[com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+120            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+120-->[com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+121            android:exported="false"
+121-->[com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+122-->[com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+123
+124        <meta-data
+124-->[com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+125            android:name="com.google.android.gms.version"
+125-->[com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+126            android:value="@integer/google_play_services_version" />
+126-->[com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+127
+128        <provider
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+129            android:name="androidx.startup.InitializationProvider"
+129-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+130            android:authorities="com.oytun.kariyer.androidx-startup"
+130-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+131            android:exported="false" >
+131-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+132            <meta-data
+132-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+133-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+134                android:value="androidx.startup" />
+134-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+135            <meta-data
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+136                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+137                android:value="androidx.startup" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+138        </provider>
+139
+140        <receiver
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+141            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+142            android:directBootAware="false"
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+143            android:enabled="true"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+144            android:exported="true"
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+145            android:permission="android.permission.DUMP" >
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+147                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+150                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+153                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+154            </intent-filter>
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+156                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+157            </intent-filter>
+158        </receiver>
+159    </application>
+160
+161</manifest>

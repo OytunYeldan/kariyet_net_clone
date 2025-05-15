@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.oytun.kariyer.app-mergeDebugResources-24:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.oytun.kariyer.app-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/res/values-night/styles.xml",

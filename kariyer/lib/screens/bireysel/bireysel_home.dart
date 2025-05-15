@@ -25,10 +25,7 @@ class _BireyselHomePageState extends State<BireyselHomePage> {
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Bireysel Ana Sayfa"),
-        centerTitle: true,
-      ),
+      // AppBar'ı tamamen kaldırdım
       body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
@@ -38,10 +35,26 @@ class _BireyselHomePageState extends State<BireyselHomePage> {
           });
         },
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.work), label: 'İlanlar'),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Eşleşen'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profil'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.work),
+            label: 'İlanlar',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star),
+            label: 'Eşleşen',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profil',
+          ),
         ],
+        selectedItemColor: Theme.of(context).colorScheme.secondary,
+        unselectedItemColor: Colors.grey,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        elevation: 8,
       ),
     );
   }

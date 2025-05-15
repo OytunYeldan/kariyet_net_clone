@@ -4,7 +4,13 @@ import 'db/database_helper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await DatabaseHelper().database;
+
+  /* Veritabanını sıfırlama
+ ********
+  await DatabaseHelper().resetDatabase();
+   */
+  //****************
+
   runApp(const MyApp());
 }
 

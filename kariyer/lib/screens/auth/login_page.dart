@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:kariyer/screens/auth/admin_panel_page.dart';
 import 'package:kariyer/screens/bireysel/bireysel_home.dart';
+import 'package:kariyer/screens/kurumsal/kurumsal_home.dart';
 import '../../db/database_helper.dart';
 import '../../models/user.dart';
-import '../kurumsal/kurumsal_home.dart';
 import 'register_page.dart';
-import 'package:flutter_svg/flutter_svg.dart'; // SVG desteği için eklendi
+
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -16,21 +18,35 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  final _formKey = GlobalKey<FormState>(); // Form doğrulama için GlobalKey
+  final _formKey = GlobalKey<FormState>();
 
   Future<void> loginUser() async {
-    if (_formKey.currentState!.validate()) { // Form doğrulamasını kontrol et
+    if (_formKey.currentState!.validate()) {
+      // ADMIN GİRİŞ KONTROLÜ
+      if (emailController.text == 'admin@gmail.com' && passwordController.text == 'admin') {
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const AdminPanelPage()));
+        return;
+      }
+
       final db = await DatabaseHelper().database;
-      final result = await db.query('users',
-          where: 'email = ? AND password = ?',
-          whereArgs: [emailController.text, passwordController.text]);
+      final result = await db.query(
+        'users',
+        where: 'email = ? AND password = ?',
+        whereArgs: [emailController.text, passwordController.text],
+      );
 
       if (result.isNotEmpty) {
         final user = UserModel.fromMap(result.first);
         if (user.userType == 'bireysel') {
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => BireyselHomePage(user: user)));
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => BireyselHomePage(user: user)),
+          );
         } else {
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => KurumsalHomePage(user: user)));
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => KurumsalHomePage(user: user)),
+          );
         }
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -46,26 +62,24 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF4F4F4), // Arka plan rengi
+      backgroundColor: const Color(0xFFF4F4F4),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
-          child: Form( // Form widget'ı eklendi
-            key: _formKey, // GlobalKey atandı
+          child: Form(
+            key: _formKey,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                // Logo veya karşılama görseli
                 SvgPicture.asset(
-                  'assets/login_logo.svg', // Örnek bir SVG dosyası.  Bunu kendi logonuzla değiştirin.
-                  height: 100, // Logo yüksekliği
-                  // ignore: deprecated_member_use
+                  'assets/login_logo.svg',
+                  height: 100,
                   color: Theme.of(context).primaryColor,
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  "Hoş Geldiniz", // Karşılama mesajı
+                  "Hoş Geldiniz",
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
@@ -74,7 +88,6 @@ class _LoginPageState extends State<LoginPage> {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 32),
-                // E-posta TextField
                 TextFormField(
                   controller: emailController,
                   keyboardType: TextInputType.emailAddress,
@@ -99,7 +112,6 @@ class _LoginPageState extends State<LoginPage> {
                   },
                 ),
                 const SizedBox(height: 16),
-                // Şifre TextField
                 TextFormField(
                   controller: passwordController,
                   obscureText: true,
@@ -121,7 +133,6 @@ class _LoginPageState extends State<LoginPage> {
                   },
                 ),
                 const SizedBox(height: 24),
-                // Giriş Yap Butonu
                 ElevatedButton(
                   onPressed: loginUser,
                   style: ElevatedButton.styleFrom(
@@ -129,7 +140,7 @@ class _LoginPageState extends State<LoginPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    backgroundColor: Theme.of(context).primaryColor, // Temanın birincil rengini kullanır
+                    backgroundColor: Theme.of(context).primaryColor,
                   ),
                   child: const Text(
                     "Giriş Yap",
@@ -137,9 +148,11 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                // Kayıt Ol Butonu
                 TextButton(
-                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const RegisterPage())),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const RegisterPage()),
+                  ),
                   child: Text(
                     "Hesabınız yok mu? Kayıt Olun",
                     style: TextStyle(color: Theme.of(context).primaryColor),
@@ -153,4 +166,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-

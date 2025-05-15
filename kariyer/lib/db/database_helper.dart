@@ -15,7 +15,7 @@ class DatabaseHelper {
 
   Future<Database> _initDb() async {
     final path = join(await getDatabasesPath(), 'app.db');
-    return await openDatabase(path, version: 1, onCreate: _onCreate);
+    return await openDatabase(path, version: 2, onCreate: _onCreate);
   }
 
   Future<void> _onCreate(Database db, int version) async {
@@ -26,6 +26,7 @@ class DatabaseHelper {
         password TEXT,
         name TEXT,
         skills TEXT,
+        phone TEXT,
         userType TEXT
       )
     ''');
@@ -36,7 +37,9 @@ class DatabaseHelper {
         title TEXT,
         description TEXT,
         skills TEXT,
-        companyId TEXT
+        companyId TEXT,
+        location TEXT,
+        salary TEXT
       )
     ''');
 
@@ -47,5 +50,18 @@ class DatabaseHelper {
         userId INTEGER
       )
     ''');
+  }
+
+  // Veritabanını sıfırlayan fonksiyon
+  Future<void> resetDatabase() async {
+    final db = await database;
+
+    // Tabloları silme
+    await db.execute('DROP TABLE IF EXISTS users');
+    await db.execute('DROP TABLE IF EXISTS jobs');
+    await db.execute('DROP TABLE IF EXISTS applications');
+
+    // Tabloları yeniden oluşturma
+    await _onCreate(db, 2);
   }
 }

@@ -3,6 +3,7 @@ import '../../models/job.dart';
 import '../../models/user.dart';
 import '../../db/database_helper.dart';
 import 'package:kariyer/ortak/job_detail_page.dart';
+
 class IlanlarPage extends StatefulWidget {
   final UserModel user;
   const IlanlarPage({super.key, required this.user});
@@ -14,7 +15,7 @@ class IlanlarPage extends StatefulWidget {
 class _IlanlarPageState extends State<IlanlarPage> {
   List<JobModel> _allJobs = [];
   List<JobModel> _filteredJobs = [];
-  TextEditingController _searchController = TextEditingController();
+  final TextEditingController _searchController = TextEditingController();
 
   @override
   void initState() {
@@ -27,13 +28,12 @@ class _IlanlarPageState extends State<IlanlarPage> {
     final db = await DatabaseHelper().database;
     final result = await db.query(
       'jobs',
-
       whereArgs: [1], // Aktif ilanlar
     );
 
     setState(() {
       _allJobs = result.map((e) => JobModel.fromMap(e)).toList();
-      _filteredJobs = List.from(_allJobs);  // Başlangıçta tüm ilanlar gösterilsin
+      _filteredJobs = List.from(_allJobs);
     });
   }
 
@@ -57,38 +57,71 @@ class _IlanlarPageState extends State<IlanlarPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("İlanlar")),
+      appBar: AppBar(
+        title: const Text("İlanlar", style: TextStyle(color: Colors.white)), // AppBar text color
+        backgroundColor: Theme.of(context).primaryColor, // AppBar background color
+      ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: TextField(
-              controller: _searchController,
-              decoration: const InputDecoration(
-                labelText: 'İş Ara',
-                hintText: 'Pozisyon, yetenek veya açıklama',
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(),
+            padding: const EdgeInsets.all(12.0),
+            child: Card(
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: TextField(
+                  controller: _searchController,
+                  decoration: InputDecoration(
+                    labelText: 'İş Ara',
+                    hintText: 'Pozisyon, yetenek...',
+                    prefixIcon: Icon(Icons.search, color: Colors.grey.shade600),
+                    border: InputBorder.none,
+                  ),
+                  style: const TextStyle(fontSize: 16),
+                ),
               ),
             ),
           ),
           Expanded(
             child: _filteredJobs.isEmpty
-                ? const Center(child: Text("İlan bulunamadı."))
+                ? const Center(
+              child: Text(
+                "Aradığınız kriterlere uygun ilan bulunamadı.",
+                style: TextStyle(fontSize: 16, color: Colors.grey),
+              ),
+            )
                 : ListView.builder(
               itemCount: _filteredJobs.length,
               itemBuilder: (context, index) {
                 final job = _filteredJobs[index];
                 return Card(
-                  margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  elevation: 3,
+                  margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: ListTile(
-                    title: Text(job.title),
-                    subtitle: Text(job.skills),
+                    title: Text(
+                      job.title,
+                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.indigo),
+                    ),
+                    subtitle: Text(
+                      job.skills,
+                      style: TextStyle(color: Colors.grey.shade600),
+                    ),
+                    trailing:
+                    const Icon(Icons.arrow_forward_ios, size: 20, color: Colors.blue),
+                    contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 12),
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => JobDetailPage(job: job, user: widget.user),
+                          builder: (context) =>
+                              JobDetailPage(job: job, user: widget.user),
                         ),
                       );
                     },
@@ -102,3 +135,4 @@ class _IlanlarPageState extends State<IlanlarPage> {
     );
   }
 }
+

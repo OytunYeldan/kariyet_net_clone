@@ -15,18 +15,34 @@ class IlanlarPage extends StatefulWidget {
 
 class _IlanlarPageState extends State<IlanlarPage> {
   List<JobModel> jobs = [];
+  bool _isLoading = true; // Added for loading state
 
   Future<void> fetchJobs() async {
     final db = await DatabaseHelper().database;
-    final result = await db.query(
-      'jobs',
-      where: 'companyId = ?',
-      whereArgs: [widget.user.id.toString()],
-    );
+    try {
+      final result = await db.query(
+        'jobs',
+        where: 'companyId = ?',
+        whereArgs: [widget.user.id.toString()],
+      );
 
-    setState(() {
-      jobs = result.map((e) => JobModel.fromMap(e)).toList();
-    });
+      setState(() {
+        jobs = result.map((e) => JobModel.fromMap(e)).toList();
+        _isLoading = false; // Set loading to false after data is fetched
+      });
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('İlanlar yüklenirken bir hata oluştu: ${e.toString()}'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+      setState(() {
+        _isLoading = false;
+      });
+    }
   }
 
   @override
@@ -47,31 +63,56 @@ class _IlanlarPageState extends State<IlanlarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('İlanlarım'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.add),
-            onPressed: () {
-              _navigateAndRefresh(IlanEklePage(user: widget.user));
-            },
-          ),
-        ],
+        title: const Text('İlanlarım', style: TextStyle(color: Colors.white)), // Consistent AppBar title style
+        backgroundColor: Theme.of(context).primaryColor, // Consistent AppBar color
       ),
-      body: jobs.isEmpty
-          ? const Center(child: Text("Henüz ilanınız yok."))
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator()) // Show loading indicator
+          : jobs.isEmpty
+          ? const Center(
+        child: Text(
+          "Henüz ilanınız yok.",
+          style: TextStyle(fontSize: 16, color: Colors.grey), // Consistent empty message style
+        ),
+      )
           : ListView.builder(
         itemCount: jobs.length,
         itemBuilder: (_, index) {
           final job = jobs[index];
-          return ListTile(
-            title: Text(job.title),
-            subtitle: Text(job.skills),
-            onTap: () {
-              _navigateAndRefresh(IlanDuzenlePage(job: job));
-            },
+          return Card(
+            elevation: 3, // Added elevation for a shadow effect
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8), // Consistent margins
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10), // Rounded corners for the Card
+            ),
+            child: ListTile(
+              title: Text(
+                job.title,
+                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.indigo), // Consistent title style
+              ),
+              subtitle: Text(
+                job.skills,
+                style: TextStyle(color: Colors.grey.shade600), // Consistent subtitle style
+              ),
+              trailing: const Icon(Icons.arrow_forward_ios, size: 20, color: Colors.blue), // Consistent trailing icon
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              onTap: () {
+                _navigateAndRefresh(IlanDuzenlePage(job: job));
+              },
+            ),
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(        // Added FloatingActionButton
+        onPressed: () {
+          _navigateAndRefresh(IlanEklePage(user: widget.user));
+        },
+        backgroundColor: Theme.of(context).primaryColor,
+        foregroundColor: Colors.white,
+        tooltip: 'İlan Ekle',
+        child: const Icon(Icons.add),
       ),
     );
   }
 }
+

@@ -4,6 +4,8 @@ class JobModel {
   String description;
   String skills;
   String companyId;
+  String location;
+  String salary;
 
   JobModel({
     this.id,
@@ -11,6 +13,8 @@ class JobModel {
     required this.description,
     required this.skills,
     required this.companyId,
+    required this.location,
+    required this.salary,
   });
 
   Map<String, dynamic> toMap() {
@@ -20,6 +24,8 @@ class JobModel {
       'description': description,
       'skills': skills,
       'companyId': companyId,
+      'location': location,
+      'salary': salary,
     };
   }
 
@@ -30,6 +36,8 @@ class JobModel {
       description: map['description'],
       skills: map['skills'],
       companyId: map['companyId'],
+      location: map['location'],
+      salary: map['salary'],
     );
   }
 }
