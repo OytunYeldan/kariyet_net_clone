@@ -21,7 +21,7 @@ class _BireyselHomePageState extends State<BireyselHomePage> {
     final pages = [
       IlanlarPage(user: widget.user),
       EslesenIlanlarPage(user: widget.user),
-      ProfilDuzenlePage(user: widget.user),
+      BireyselProfilPage(user: widget.user),
     ];
 
     return Scaffold(

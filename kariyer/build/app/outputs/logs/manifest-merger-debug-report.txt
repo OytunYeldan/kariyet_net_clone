@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:2:5-33:19
+INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:11:5-36:19
 INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml
 MERGED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:5-16:19
 MERGED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:5-16:19
@@ -8,10 +8,10 @@ MERGED from [:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/bui
 MERGED from [:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/387372814941fe7b97c8bcb81b94b480/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/387372814941fe7b97c8bcb81b94b480/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
+MERGED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-32:19
+MERGED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-32:19
 MERGED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-12:19
-MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
-MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
@@ -20,6 +20,8 @@ MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/oytun/.gr
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/oytun/.gradle/caches/8.10.2/transforms/f93d28be2e7134abc4778c1abb7bd62c/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
@@ -39,8 +41,8 @@ MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/oytun/.gra
 	android:name
 		INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:1:1-45:12
-MERGED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:1:1-45:12
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:1:1-44:12
+MERGED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:1:1-44:12
 INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -49,24 +51,25 @@ MERGED from [:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/bui
 MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/387372814941fe7b97c8bcb81b94b480/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-13:12
 MERGED from [:google_maps_flutter_android] /Users/oytun/AndroidStudioProjects/kariyer/build/google_maps_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-34:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:geocoding_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geocoding_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite_android] /Users/oytun/AndroidStudioProjects/kariyer/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.browser:browser:1.8.0] /Users/oytun/.gradle/caches/8.10.2/transforms/c105c94b5a74bdd649fb57cbc60195ab/transformed/browser-1.8.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.window:window-java:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/de9e44931b766a9da772886a2b552389/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:17:1-21:12
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/oytun/.gradle/caches/8.10.2/transforms/f93d28be2e7134abc4778c1abb7bd62c/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/oytun/.gradle/caches/8.10.2/transforms/b87b2fa86eb5ab2cf9be2fd0e3df93df/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity:1.8.1] /Users/oytun/.gradle/caches/8.10.2/transforms/0f250260ef1303e66984a8733104a843/transformed/jetified-activity-1.8.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.9.3] /Users/oytun/.gradle/caches/8.10.2/transforms/d194a5c8d3b1dbdd14383a36151cc2ed/transformed/jetified-activity-1.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.8.0] /Users/oytun/.gradle/caches/8.10.2/transforms/c105c94b5a74bdd649fb57cbc60195ab/transformed/browser-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.window:window-java:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/de9e44931b766a9da772886a2b552389/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:17:1-21:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/oytun/.gradle/caches/8.10.2/transforms/0615ee21d48152f7852eb08dc2e1cd1e/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/9db7ada978d8abe8d184b6733a7dee45/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/cea4eacd4cb7c8b871b1b46bb1f4b29a/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/825cead0eca0297dfb20cf1bab9d4ead/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/df249218d95f089507fb7cd80639d0e4/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/825cead0eca0297dfb20cf1bab9d4ead/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/9895d2cf0eab0b0a796f8d80396e0125/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/8ccfeaa17542e61792b4ffdf62e2f063/transformed/jetified-core-ktx-1.16.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oytun/.gradle/caches/8.10.2/transforms/ffa9ae7ba7091cbafbe0cf9d67662156/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -75,6 +78,7 @@ MERGED from [androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/trans
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/db487b28068367bcb3cb9ed781158d15/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/oytun/.gradle/caches/8.10.2/transforms/e74e2a95bf15f363512d249a41a4796c/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/oytun/.gradle/caches/8.10.2/transforms/77aceb8d828efefc5ad66db1d1cc11cf/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oytun/.gradle/caches/8.10.2/transforms/bbfc3472d9d1bce7f26b1511d2f6bf61/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/727af41ab68a38ff054ced71fb5a721d/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
@@ -94,26 +98,50 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/oytun/.gradle/cache
 		INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:3:5-79
+MERGED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-79
+MERGED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:3:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:4:5-81
+MERGED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-81
+MERGED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:4:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:8:5-69
+MERGED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-69
+MERGED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-69
+	android:name
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:8:22-66
+uses-permission#android.permission.SEND_SMS
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:9:22-64
 queries
-ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:39:5-44:15
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:38:5-43:15
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:40:9-43:18
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:39:9-42:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:41:13-72
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:40:13-72
 	android:name
-		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:41:21-70
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:40:21-70
 data
-ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:42:13-50
+ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:41:13-50
 	android:mimeType
-		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:42:19-48
-uses-permission#android.permission.INTERNET
-ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
-	android:name
-		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/main/AndroidManifest.xml:41:19-48
 uses-sdk
 INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml
@@ -128,6 +156,8 @@ MERGED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/ka
 MERGED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:google_maps_flutter_android] /Users/oytun/AndroidStudioProjects/kariyer/build/google_maps_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:google_maps_flutter_android] /Users/oytun/AndroidStudioProjects/kariyer/build/google_maps_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:6:5-44
+MERGED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:6:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:geocoding_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geocoding_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
@@ -136,12 +166,6 @@ MERGED from [:sqflite_android] /Users/oytun/AndroidStudioProjects/kariyer/build/
 MERGED from [:sqflite_android] /Users/oytun/AndroidStudioProjects/kariyer/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
-MERGED from [androidx.browser:browser:1.8.0] /Users/oytun/.gradle/caches/8.10.2/transforms/c105c94b5a74bdd649fb57cbc60195ab/transformed/browser-1.8.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.browser:browser:1.8.0] /Users/oytun/.gradle/caches/8.10.2/transforms/c105c94b5a74bdd649fb57cbc60195ab/transformed/browser-1.8.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.window:window-java:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/de9e44931b766a9da772886a2b552389/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
-MERGED from [androidx.window:window-java:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/de9e44931b766a9da772886a2b552389/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/43c9e116838c7a3d9f358f5d2e3c873b/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:18:5-43
@@ -152,18 +176,24 @@ MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/oytun/.gradle/caches/8.10.2/transforms/b87b2fa86eb5ab2cf9be2fd0e3df93df/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/oytun/.gradle/caches/8.10.2/transforms/b87b2fa86eb5ab2cf9be2fd0e3df93df/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity:1.8.1] /Users/oytun/.gradle/caches/8.10.2/transforms/0f250260ef1303e66984a8733104a843/transformed/jetified-activity-1.8.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.1] /Users/oytun/.gradle/caches/8.10.2/transforms/0f250260ef1303e66984a8733104a843/transformed/jetified-activity-1.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.3] /Users/oytun/.gradle/caches/8.10.2/transforms/d194a5c8d3b1dbdd14383a36151cc2ed/transformed/jetified-activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.3] /Users/oytun/.gradle/caches/8.10.2/transforms/d194a5c8d3b1dbdd14383a36151cc2ed/transformed/jetified-activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.8.0] /Users/oytun/.gradle/caches/8.10.2/transforms/c105c94b5a74bdd649fb57cbc60195ab/transformed/browser-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.8.0] /Users/oytun/.gradle/caches/8.10.2/transforms/c105c94b5a74bdd649fb57cbc60195ab/transformed/browser-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window-java:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/de9e44931b766a9da772886a2b552389/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
+MERGED from [androidx.window:window-java:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/de9e44931b766a9da772886a2b552389/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/oytun/.gradle/caches/8.10.2/transforms/0615ee21d48152f7852eb08dc2e1cd1e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/oytun/.gradle/caches/8.10.2/transforms/0615ee21d48152f7852eb08dc2e1cd1e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/9db7ada978d8abe8d184b6733a7dee45/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/9db7ada978d8abe8d184b6733a7dee45/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/cea4eacd4cb7c8b871b1b46bb1f4b29a/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/cea4eacd4cb7c8b871b1b46bb1f4b29a/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/825cead0eca0297dfb20cf1bab9d4ead/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/825cead0eca0297dfb20cf1bab9d4ead/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/df249218d95f089507fb7cd80639d0e4/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/df249218d95f089507fb7cd80639d0e4/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/825cead0eca0297dfb20cf1bab9d4ead/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/825cead0eca0297dfb20cf1bab9d4ead/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/9895d2cf0eab0b0a796f8d80396e0125/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/9895d2cf0eab0b0a796f8d80396e0125/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/8ccfeaa17542e61792b4ffdf62e2f063/transformed/jetified-core-ktx-1.16.0/AndroidManifest.xml:5:5-44
@@ -180,6 +210,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/oytun/.gradle/caches/8.10.2/transforms/64834212b24f4426ff04fd6e78b99db4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/oytun/.gradle/caches/8.10.2/transforms/e74e2a95bf15f363512d249a41a4796c/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/oytun/.gradle/caches/8.10.2/transforms/e74e2a95bf15f363512d249a41a4796c/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/oytun/.gradle/caches/8.10.2/transforms/77aceb8d828efefc5ad66db1d1cc11cf/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/oytun/.gradle/caches/8.10.2/transforms/77aceb8d828efefc5ad66db1d1cc11cf/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oytun/.gradle/caches/8.10.2/transforms/2c70000d7c43a73649fa900c56b342d9/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oytun/.gradle/caches/8.10.2/transforms/bbfc3472d9d1bce7f26b1511d2f6bf61/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
@@ -206,14 +238,6 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/oytun/.gradle/cache
 		INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/oytun/AndroidStudioProjects/kariyer/android/app/src/debug/AndroidManifest.xml
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-81
-	android:name
-		ADDED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-78
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-79
-	android:name
-		ADDED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-76
 service#com.lyokone.location.FlutterLocationService
 ADDED from [:location] /Users/oytun/AndroidStudioProjects/kariyer/build/location/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:9-15:56
 	android:enabled
@@ -234,16 +258,50 @@ ADDED from [:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/buil
 		ADDED from [:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-53
 	android:name
 		ADDED from [:geolocator_android] /Users/oytun/AndroidStudioProjects/kariyer/build/geolocator_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-77
-uses-permission#android.permission.CALL_PHONE
-ADDED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-69
-	android:name
-		ADDED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-66
 uses-feature#android.hardware.telephony
 ADDED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:5-11:36
 	android:required
 		ADDED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:9-33
 	android:name
 		ADDED from [:flutter_phone_direct_caller] /Users/oytun/AndroidStudioProjects/kariyer/build/flutter_phone_direct_caller/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:9-50
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:9-17:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-47
+	android:authorities
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-74
+	android:exported
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-16:75
+	android:resource
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:17-72
+	android:name
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:17-67
+service#com.google.android.gms.metadata.ModuleDependencies
+ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:9-31:19
+	android:enabled
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:13-36
+	android:exported
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:22:13-37
+	tools:ignore
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:13-40
+	android:name
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:13-78
+intent-filter#action:name:com.google.android.gms.metadata.MODULE_DEPENDENCIES
+ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:13-26:29
+action#com.google.android.gms.metadata.MODULE_DEPENDENCIES
+ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:17-94
+	android:name
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:25-91
+meta-data#photopicker_activity:0:required
+ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:13-30:36
+	android:value
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:30:17-33
+	android:name
+		ADDED from [:image_picker_android] /Users/oytun/AndroidStudioProjects/kariyer/build/image_picker_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:29:17-63
 activity#io.flutter.plugins.urllauncher.WebViewActivity
 ADDED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-11:74
 	android:exported
@@ -252,18 +310,6 @@ ADDED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/bu
 		ADDED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-71
 	android:name
 		ADDED from [:url_launcher_android] /Users/oytun/AndroidStudioProjects/kariyer/build/url_launcher_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-74
-uses-library#androidx.window.extensions
-ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-	android:required
-		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-uses-library#androidx.window.sidecar
-ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-	android:required
-		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-	android:name
-		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/d01f947138c0ea8cbe71d441ecdfef52/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
 	android:name
@@ -300,6 +346,18 @@ MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/oytun/.gra
 		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/oytun/.gradle/caches/8.10.2/transforms/472f0be6a2cf68d481abc1885971a1f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] /Users/oytun/.gradle/caches/8.10.2/transforms/19f7944fa2fdb887826e5aecf9ecdf2f/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.16.0] /Users/oytun/.gradle/caches/8.10.2/transforms/2b667e37a3001b12400c545582b91eb8/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel

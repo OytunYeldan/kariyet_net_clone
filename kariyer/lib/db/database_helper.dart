@@ -56,12 +56,10 @@ class DatabaseHelper {
   Future<void> resetDatabase() async {
     final db = await database;
 
-    // Tabloları silme
     await db.execute('DROP TABLE IF EXISTS users');
     await db.execute('DROP TABLE IF EXISTS jobs');
     await db.execute('DROP TABLE IF EXISTS applications');
 
-    // Tabloları yeniden oluşturma
     await _onCreate(db, 2);
   }
 }

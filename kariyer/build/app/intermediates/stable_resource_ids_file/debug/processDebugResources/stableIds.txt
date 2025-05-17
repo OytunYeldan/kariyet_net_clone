@@ -1,4 +1,4 @@
-com.oytun.kariyer:xml/image_share_filepaths = 0x7f0e0000
+com.oytun.kariyer:xml/image_share_filepaths = 0x7f0e0001
 com.oytun.kariyer:styleable/SplitPairFilter = 0x7f0d000d
 com.oytun.kariyer:styleable/LoadingImageView = 0x7f0d000a
 com.oytun.kariyer:styleable/GradientColorItem = 0x7f0d0009
@@ -47,6 +47,7 @@ com.oytun.kariyer:id/time = 0x7f070068
 com.oytun.kariyer:id/text2 = 0x7f070067
 com.oytun.kariyer:id/terrain = 0x7f070065
 com.oytun.kariyer:id/tag_window_insets_animation_callback = 0x7f070064
+com.oytun.kariyer:xml/flutter_image_picker_file_paths = 0x7f0e0000
 com.oytun.kariyer:id/tag_unhandled_key_listeners = 0x7f070063
 com.oytun.kariyer:styleable/ActivityFilter = 0x7f0d0000
 com.oytun.kariyer:id/tag_unhandled_key_event_manager = 0x7f070062

@@ -6,10 +6,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   /* Veritabanını sıfırlama
- ********
   await DatabaseHelper().resetDatabase();
    */
-  //****************
+
 
   runApp(const MyApp());
 }
