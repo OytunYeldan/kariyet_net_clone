@@ -1,16 +1,53 @@
-# kariyer
+# 📱 PTWP - Part-Time Work Platform
 
-A new Flutter project.
+**PTWP (Part-Time Work Platform)**, Karabük’te yaşayan öğrencilerin boş vakitlerinde günlük işler yaparak ek gelir kazanmasını kolaylaştıran mobil bir uygulamadır. Aynı zamanda işletmelerin günlük iş gücü ihtiyaçlarını pratik bir şekilde karşılamalarına yardımcı olur.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Özellikler
 
-A few resources to get you started if this is your first Flutter project:
+- 🔍 **Geniş İş Yelpazesi**  
+  Broşür dağıtım, köpek gezdirme, kasiyerlik ve daha fazlası...
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🎯 **Kişiselleştirilmiş İlanlar**  
+  Öğrencinin profilinde belirttiği alanlara göre eşleştirme
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 📍 **Konum Bazlı Listeleme**  
+  Karabük merkezli işler öncelikli olarak sunulur
+
+- 💬 **Doğrudan İletişim**  
+  Öğrenciler ve işverenler arasında anlık iletişim imkanı
+
+- 🧑‍💼 **İşveren Paneli**  
+  Hızlı ilan oluşturma ve başvuranları görüntüleme
+
+- 📝 **Profil Oluşturma**  
+  Başvurularda daha etkili sunum için profil bilgileri
+
+---
+
+## 👥 Kimler Kullanmalı?
+
+- 🎓 Ek gelir arayan **öğrenciler**
+- 🕐 Boş vakitlerini değerlendirmek isteyen **gençler**
+- 🏢 Günlük çalışan arayan **işverenler** ve **küçük işletmeler**
+
+---
+
+## 📷 Uygulama Ekranları
+
+
+![Ptwppart tıme work platform-2](https://github.com/user-attachments/assets/3cbb33f8-2d42-43ee-a312-464ed58d15be)
+![Ptwppart tıme work platform-3](https://github.com/user-attachments/assets/b87c057a-611a-4d9e-9f55-5fa016250188)
+![Ptwppart tıme work platform-4](https://github.com/user-attachments/assets/e230a7a6-3399-44ae-8be6-bc60357955de)
+![Ptwppart tıme work platform-5](https://github.com/user-attachments/assets/798363f2-d942-4a39-b84b-846be23f2298)
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- Flutter (Dart)
+- SQLite (Local veritabanı)
+- Material Design
+- State Management (setState, Provider)
+
